@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Checkout || Panther</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Link de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <!-- Custom styles for this page -->
+    <link href="form-validation.css" rel="stylesheet">
+    <!-- Links locales -->
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../scripts/checkout.js" defer></script>
+</head>
+
+<body onload="listaCheckout(); cargarEventListenersCheck();">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary bg-gradient fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img class="logo-block" src="../images/panther-logo.png"
+                    alt="logo-blockbuster"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alquiler.html">Juegos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mi-carrito.html">Mi carrito <span class="badge badge-light"
+                                id="cantidad-prod"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido de la page -->
+    <div class="container">
+        <div class="py-5 text-center text-white checkpag">
+            <img class="d-block mx-auto mb-4"
+                src="https://icongr.am/fontawesome/credit-card-alt.svg?size=88&color=ffffff" alt="" width="72"
+                height="72">
+            <h2>Shop Now!</h2>
+            <p class="lead">Completa los siguientes datos y luego procede abonar, luego nos comunicaremos con usted para
+                organizar
+                la fecha de retiro en el local.
+            </p>
+        </div>
+
+        <div class="row text-white">
+            <div class="col-md-4 order-md-2 mb-4">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-white">Tus juegos</span>
+                </h4>
+                <ul class="list-group mb-3" id="listaUl">
+                    <!-- Lista con js -->
+                </ul>
+
+                <form class="card p-2">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Promo code">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-secondary">Cargar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-8 order-md-1">
+                <h4 class="mb-3">Tus datos</h4>
+                <form class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">Nombre</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Nombre es un campo requerido.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">Apellido</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Apellido es un campo requerido.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="username">Cuenta de socio</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">#</span>
+                            </div>
+                            <input type="text" class="form-control" id="username" placeholder="Username" required>
+                            <div class="invalid-feedback" style="width: 100%;">
+                                Cuenta de socio es un campo requerido.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        <div class="invalid-feedback">
+                            Please enter a valid email address for shipping updates.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address">Localidad</label>
+                        <input type="text" class="form-control" id="address"
+                            placeholder="Merlo, San Antonio de Padua, etc" required>
+                        <div class="invalid-feedback">
+                            Localidad es un campo requerido.
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <label for="country">Seleccione local donde quiere retirar.</label>
+                            <select class="custom-select d-block w-100" id="country" required>
+                                <option value="">Seleccionar...</option>
+                                <option>Colonia del Sacramento, Av. Artigas 323</option>
+                                <option>Montevideo, Av. Luis Alberto de Herrera 1290</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Por favor seleccione un local válido.
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="same-address">
+                        <label class="custom-control-label" for="same-address">Desea recibir las novedades del
+                            Newsletter?</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="save-info">
+                        <label class="custom-control-label" for="save-info">Guardar información para la próxima
+                            compra.</label>
+                    </div>
+                    <hr class="mb-4">
+
+                    <h4 class="mb-3">Métodos de pago</h4>
+
+                    <div class="d-block my-3">
+                        <div class="custom-control custom-radio">
+                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input"
+                                value="credit" checked required>
+                            <label class="custom-control-label" for="credit">Tarjeta de Crédito</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input"
+                                value="debit" required>
+                            <label class="custom-control-label" for="debit">Tarjéta de Débito</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input"
+                                value="paypal" required>
+                            <label class="custom-control-label" for="paypal">Efectivo en el local</label>
+                        </div>
+                    </div>
+                    <div class="row methodPayment">
+                        <div class="col-md-6 mb-3">
+                            <label for="cc-name">Nombre de la tarjeta</label>
+                            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                            <small class="text">Nombre completo como aparece en la tarjeta.</small>
+                            <div class="invalid-feedback">
+                                Nombre es un campo requerido.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="cc-number">Número de la tarjeta</label>
+                            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Número de la tarjeta es un campo requerido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row methodPayment">
+                        <div class="col-md-3 mb-3">
+                            <label for="cc-expiration">Fecha de expiración</label>
+                            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Expiración es un campo requerido.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="cc-cvv">Código de seguridad</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="3 dígitos del reverso"
+                                required>
+                            <div class="invalid-feedback">
+                                Código de seguridad es un campo requerido.
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                </form>
+                <button class="custom-btn btn-5" id="abonar">Abonar/Reservar</button>
+                <!--btn btn-primary btn-lg btn-block-->
+                    <!-- Modal -->
+                    <div id="myModal" class="modal">
+                        <!-- Modal contenido -->
+                        <div class="modal-content">
+                            <p>Gracias por su compra, pronto recibirá un e-mail con los datos confirmados y fechas
+                                para poder retirar la compra/alquiler.
+                            </p>
+                            <a href="../index.html">
+                            <button class="custom-btn btn-5">Regresar a la Home</button></a>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        <!-- FIN Contenido de la page -->
+
+        <!-- inicio de footer -->
+        <footer>
+            <div class="footer-block">
+                <img class="logo-footer" src="../images/panther-logo.png" alt="Logo Panther">
+                <ul class="list-footer">
+                    <li class="list-1">Avenida Artigas, 70000 Col. Del Sacramento, Departamento de Colonia</li>
+                    <li class="list-1"><a class="diferent-a" href="contacto.html"><b>Contacto</b></a></li>
+                    <li>
+                        <div class="list-2">
+                            <a href="https://www.facebook.com/" target="_blank"><img class="logo-redes1 red-facebook"
+                                    src="../images/facebook.png" alt="Logo Facebook"></a>
+                            <a href="https://www.instagram.com/" target="_blank"><img class="logo-redes2 red-instagram"
+                                    src="../images/instagram.png" alt="Logo Instagram"></a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="copyright">
+                    <p>Copyright &copy; Panther 2022</p>
+                </div>
+            </div>
+
+        </footer>
+        <!-- fin de footer -->
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="/docs/4.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <!-- <script src="form-validation.js"></script> -->
+    <script src="../scripts/mi-carrito.js"></script>
+</body>
+
+</html>

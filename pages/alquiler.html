@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquiler Juegos || Panther</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <!-- Links bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<!-- Links locales -->
+<script src="../package/dist/sweetalert2.all.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body onload="cardsAlquiler()">
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary bg-gradient fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img class="logo-block" src="../images/panther-logo.png" alt="panther-logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alquiler.html">Juegos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mi-carrito.html">Mi carrito <span class="badge badge-light" id="cantidad-prod"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<!-- Contenido de la página -->
+<section class="bg-dark py-5 alquilerTitle">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+            <h1 class="display-6 fw-bolder">Alquiler y venta de juegos</h1>
+            <!-- <p class="lead fw-normal text-white-50 mb-0">Busca la que más te guste!</p> -->
+        </div>
+    </div>
+</section>
+<!-- Section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center" id="cards-alquiler">
+                <!-- cards con js -->
+        </div>
+    </div>
+</section>
+<!-- FIN Contenido de la página -->
+
+    <!-- inicio de footer -->
+    <footer>
+        <div class="footer-block">
+            <img class="logo-footer" src="../images/panther-logo.png" alt="Logo Panther"></a>
+            <ul class="list-footer">
+                <li class="list-1">Avenida Artigas, 70000 Col. Del Sacramento, Departamento de Colonia</li>
+                <li class="list-1"><a class="diferent-a" href="pages/contacto.html"><b>Contacto</b></a></li>
+                <li>
+                    <div class="list-2">
+                        <a href="https://www.facebook.com/" target="_blank"><img class="logo-redes1 red-facebook"
+                                src="../images/facebook.png" alt="Logo Facebook"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img class="logo-redes2 red-instagram"
+                                src="../images/instagram.png" alt="Logo Instagram"></a>
+                    </div>
+                </li>
+            </ul>
+            <div class="copyright">
+                <p>Copyright &copy; Panther 2022</p>
+            </div>
+        </div>
+
+    </footer>
+    <!-- fin de footer -->
+
+    <script src="../scripts/mi-carrito.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto || Panther</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Keywords -->
+    <meta name="keywords" content="contacto,consultas,transportista,comerciante">
+    <!-- Description -->
+    <meta name="description"
+        content="Ante cualquier duda se recomienda consultar las preguntas frecuentes que se encuentran en nuestra página, o contactarse con nosotros.">
+    <!-- Autor -->
+    <meta name="author" content="González Joaquin">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <!-- Link de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <!-- Link animate style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Links locales -->
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary bg-gradient fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img class="logo-block" src="../images/panther-logo.png"
+                    alt="logo-blockbuster"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alquiler.html">Juegos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mi-carrito.html">Mi carrito <span class="badge badge-light"
+                                id="cantidad-prod"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="text-contact pageC">
+        <h1 class="title-contacto">CONTACTO</h1>
+        <p>Para consultas y dudas completar los siguientes datos.</p>
+    </section>
+    <div class="signboard-info">
+        <p>Una vez envíado el formulario, se le enviará un e-mail con la respuesta a la consulta
+            solicitada.<br>¡Advertencia! Las respuestas
+            pueden demorar unos días.<br>La atención al cliente es de Lunes a Viernes de 9 a 18hs. Y Sábados y Domingos
+            de 9 a 12hs.</p>
+    </div>
+    <!-- formulario de contacto -->
+    <form class="form-mine">
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Apellido">
+            </div>
+        </div>
+        <div class="form-group text-white">
+            <label for="exampleFormControlInput1">Correo Electronico</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-check text-white">
+            <label class="form-check-label" for="defaultCheck1">
+                ¿Desea recibir el Newsletter?
+            </label>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        </div>
+        <div class="form-group text-white">
+            <label for="exampleFormControlTextarea1">Consulta:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="forms-bottoms">
+            <input type="reset" value="Limpiar formulario" class="action action-reset"> <input type="submit"
+                value="Enviar formulario" class="action action-primary">
+        </div>
+    </form>
+    <!-- cierre de form contacto -->
+
+    <!-- inicio de footer -->
+    <footer>
+        <div class="footer-block">
+            <img class="logo-footer" src="../images/panther-logo.png"
+                alt="Logo Panther"></a>
+            <ul class="list-footer">
+                <li class="list-1">Avenida Artigas, 70000 Col. Del Sacramento, Departamento de Colonia</li>
+                <li class="list-1"><a class="diferent-a" href="../pages/contacto.html"><b>Contacto</b></a></li>
+                <li>
+                    <div class="list-2">
+                        <a href="https://www.facebook.com/" target="_blank"><img class="logo-redes1 red-facebook"
+                                src="../images/facebook.png" alt="Logo Facebook"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img class="logo-redes2 red-instagram"
+                                src="../images/instagram.png" alt="Logo Instagram"></a>
+                    </div>
+                </li>
+            </ul>
+            <div class="copyright">
+                <p>Copyright &copy; Panther 2022</p>
+            </div>
+        </div>
+
+    </footer>
+    <!-- fin de footer -->
+
+</body>
+
+</html>

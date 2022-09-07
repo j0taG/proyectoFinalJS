@@ -1,0 +1,541 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #282727;
+}
+
+/* Header - Logo - Menu */
+.logo-block {
+    width: 14% !important;
+}
+
+.navbar-brand {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.navbar>.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    margin-right: auto;
+    margin-left: 2%;
+}
+
+/*Footer*/
+footer {
+    margin-top: 0%;
+    padding: 34px 0 0;
+    text-align: center;
+    height: 260px;
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer {
+    width: 10%;
+}
+
+.list-footer {
+    padding-top: 4%;
+    list-style-type: none;
+    font-size: 12px;
+}
+
+.diferent-a {
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: none !important;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.list-1 {
+    margin-bottom: 4%;
+    font-size: 12px !important;
+    padding: 0px 40px 0px 40px;
+    color: #ffffff;
+}
+
+.list-2,
+.copyright {
+    display: inline-block;
+    color: #ffffff;
+}
+
+.logo-redes1 {
+    margin-right: 22px;
+}
+
+/* FIN FOOTER */
+
+/* Sliders Home */
+#carouselExampleCaptions {
+    margin-top: 3.7%;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-inner {
+    height: 754px;
+}
+
+.carousel-caption {
+    bottom: 14.25rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 0px rgb(45, 3, 255);
+}
+
+.carousel-inner>.carousel-control-next,
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-control-prev {
+    width: 4%;
+}
+
+/* BOTONES HOME */
+.custom-boton {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.boton-1,
+.boton-2 {
+    background: rgb(112, 111, 111);
+    background: linear-gradient(0deg, rgb(28, 29, 29) 0%, rgb(30, 31, 31) 100%);
+    width: 350px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.boton-1 span,
+.boton-2 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.boton-1:before,
+.boton-1:after,
+.boton-2:before,
+.boton-2:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(46, 46, 46);
+    transition: all 0.3s ease;
+}
+
+.boton-1:before,
+.boton-2:before {
+    height: 0%;
+    width: 2px;
+}
+
+.boton-1:after,
+.boton-2:after {
+    width: 0%;
+    height: 2px;
+}
+
+.boton-1:hover,
+.boton-2:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.boton-1:hover:before {
+    height: 100%;
+}
+
+.boton-1:hover:after,
+.boton-2:hover:after {
+    width: 100%;
+}
+
+.boton-1 span:hover,
+.boton-2 span:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(12, 17, 27, 0.575);
+}
+
+.boton-1 span:before,
+.boton-1 span:after,
+.boton-2 span:before,
+.boton-2 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(35, 35, 35);
+    transition: all 0.3s ease;
+}
+
+.boton-1 span:before,
+.boton-2 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.boton-1 span:after,
+.boton-2 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.boton-1 span:hover:before,
+.boton-2 span:hover:before {
+    height: 100%;
+}
+
+.boton-1 span:hover:after,
+.boton-2 span:hover:after {
+    width: 100%;
+}
+
+.boton-2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* FIN Sliders Home */
+
+/* TEXTO Home */
+.py-5 {
+    padding-bottom: 0 !important;
+}
+
+.py-5>.container {
+    text-align: center;
+    color: #ffffff;
+}
+
+/*Modal de home*/
+/* Modal (background) */
+.modalHome {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    /* left: 0; */
+    left: 18%;
+    /* top: 0; */
+    top: 16%;
+    /* width: 100%; */
+    width: 68%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+}
+
+/* Contenido del Modal */
+.modal-contentHome {
+    background-color: #000000d6;
+    margin: auto;
+    padding: 0px 20px 20px 20px;
+    border: 4px solid #888;
+    width: 80%;
+    height: 70%;
+}
+
+.modal-contentHome p,
+.close {
+    color: rgb(255, 255, 255);
+}
+
+.close {
+    cursor: pointer;
+    font-size: 40px;
+    margin-left: 98%;
+}
+
+/* FIN TEXTO Home */
+
+/*Página contacto*/
+.text-contact.pageC {
+    margin-top: 6%;
+}
+
+.pageC .title-contacto {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: -4px -2px 12px rgb(0, 172, 238);
+}
+
+.text-contact.pageC p {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #fff;
+}
+
+.signboard-info {
+    width: 350px;
+    margin: 0px auto;
+    padding-bottom: 10px;
+}
+
+.signboard-info p {
+    font-size: 12px;
+    background-color: rgb(0, 172, 238);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.row {
+    padding: 0px 0px 20px 0px !important;
+}
+
+.form-group {
+    padding: 0px 0px 20px 0px !important;
+}
+
+.form-buttoms {
+    padding: 0px 0px 20px 0px !important;
+}
+
+.form-check {
+    padding: 0px 0px 20px 24px !important;
+}
+
+.form-mine {
+    width: 50% !important;
+    margin: auto;
+}
+
+.form-mine .col {
+    margin-bottom: 16px;
+}
+
+.form-mine .row {
+    margin: 0px;
+}
+
+/* FIN pagina contacto */
+
+/* Página de ALQUILER DE JUEGOS */
+.py-5.alquilerTitle {
+    padding-bottom: 8px !important;
+}
+
+.display-6 {
+    font-size: 2rem;
+}
+
+section>.my-5 {
+    margin-top: 2.5rem !important;
+    margin-bottom: 0rem !important;
+}
+
+
+/* FIN página de alquiler */
+
+/* Pagina Mi carrito */
+/*boton pagar*/
+.custom-btn.btn-5 {
+    font-family: 'Andale Mono', monospace;
+}
+
+button {
+    margin: 20px;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.btn-5 {
+    width: 210px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: rgb(0, 172, 238);
+    background: linear-gradient(0deg, rgb(2, 97, 134) 0%, rgb(1, 128, 179) 100%);
+}
+
+.btn-5:hover {
+    color: rgb(0, 172, 238);
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn-5:before,
+.btn-5:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: rgb(0, 172, 238);
+    box-shadow:
+        -1px -1px 5px 0px #fff,
+        7px 7px 20px 0px #0003,
+        4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+}
+
+.btn-5:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.btn-5:hover:before,
+.btn-5:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+/* fin boton pagar */
+.row.carrito {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: -5%;
+}
+
+.carrito {
+    margin-top: 6%;
+}
+
+.text-muted.carrito2 {
+    color: #ffff !important;
+    width: 162px;
+    text-align: center;
+    height: 38px;
+}
+
+.carrito3 {
+    margin: 20px 33%;
+}
+
+/* FIN pagina mi carrito */
+
+/* Pagina checkout-pagos */
+.checkpag {
+    padding-top: 6rem !important;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+/*Modal del boton Abonar-reservar*/
+/* Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 4;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 18%;
+    top: 16%;
+    width: 68%;
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+}
+
+/* Contenido del Modal */
+.modal-content {
+    background-color: #000000d6;
+    margin: auto;
+    padding: 20px;
+    border: 4px solid #888;
+    width: 80%;
+}
+
+.modal-content p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.modal-content .custom-btn{
+    align-items: center;
+    margin: 0px 39%;
+}
+
+/* FIN Pagina checkout-pagos */
