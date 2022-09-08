@@ -1,7 +1,7 @@
 [
     { "id": 0, "nombre": "Marvel's Spider-Man Remastered", "stock": 4, "precio": "400", "tipo": "alquiler", "badge": "Acción", "img": "../images/games/Marvel's-Spider-Man-Remastered.jpg" },
-    { "id": 1, "nombre": "God of War", "stock": 2, "precio": "400", "tipo": "alquiler", "badge": "Acción", "img": "../images/games/God-of-War.jpg" },
-    { "id": 2, "nombre": "Back 4 Blood (PS5)", "stock": 1, "precio": "1500", "tipo": "venta", "badge": "Shooting", "img": "../images/games/Back-4-Blood-PS5-Edition.jpg" },
+    { "id": 1, "nombre": "God of War", "stock": 2, "precio": "400", "tipo": "alquiler", "badge": "Acción/Aventura", "img": "../images/games/God-of-War.jpg" },
+    { "id": 2, "nombre": "Back 4 Blood (PS5)", "stock": 1, "precio": "1500", "tipo": "venta", "badge": "Shooter/Supervivencia", "img": "../images/games/Back-4-Blood-PS5-Edition.jpg" },
     { "id": 3, "nombre": "Batman: Arkham Knight", "stock": 0, "precio": "1000", "tipo": "alquiler", "badge": "Acción", "img": "../images/games/Batman-Arkham-Knight.jpg" },
     { "id": 4, "nombre": "Battlefield 2042", "stock": 8, "precio": "1500", "tipo": "venta", "badge": "Shooter", "img": "../images/games/Battlefield-2042.jpg" },
     { "id": 5, "nombre": "Cyberpunk 2077", "stock": 7, "precio": "1500", "tipo": "alquiler", "badge": "RPG/Acción", "img": "../images/games/Cyberpunk-2077.jpg" },
@@ -11,8 +11,8 @@
     { "id": 9, "nombre": "FIFA 22", "stock": 2, "precio": "400", "tipo": "alquiler", "badge": "Deporte", "img": "../images/games/FIFA-22.jpg" },
     { "id": 10, "nombre": "Grand Theft Auto V | Criminal Enterprise Starter Pack", "stock": 1, "precio": "1000", "tipo": "venta", "badge": "Acción/Aventura", "img": "../images/games/Grand-Theft-Auto-V-Criminal-Enterprise-Starter-Pack.jpg" },
     { "id": 11, "nombre": "Gran Turismo 7 (PS5)", "stock": 0, "precio": "1500", "tipo": "alquiler", "badge": "Carrera", "img": "../images/games/Gran-Turismo-7-PS5-Edition.jpg" },
-    { "id": 12, "nombre": "Horizon Forbidden West (PS5)", "stock": 8, "precio": "1500", "tipo": "venta", "badge": "Aventura", "img": "../images/games/Horizon-Forbidden-West-PS5-Edition.jpg" },
+    { "id": 12, "nombre": "Horizon Forbidden West (PS5)", "stock": 8, "precio": "1500", "tipo": "venta", "badge": "Acción/Aventura", "img": "../images/games/Horizon-Forbidden-West-PS5-Edition.jpg" },
     { "id": 13, "nombre": "Mortal Kombat | Ultimate Edition", "stock": 7, "precio": "400", "tipo": "alquiler", "badge": "Acción/Pelea", "img": "../images/games/Mortal-Kombat-Ultimate-Edition.jpg" },
-    { "id": 14, "nombre": "The Sims 4", "stock": 0, "precio": "1000", "tipo": "venta", "badge": "Simultaion", "img": "../images/games/The-Sims-4.jpg" },
+    { "id": 14, "nombre": "The Sims 4", "stock": 0, "precio": "1000", "tipo": "venta", "badge": "Simulación", "img": "../images/games/The-Sims-4.jpg" },
     { "id": 15, "nombre": "Uncharted | Legacy of Thieves Collection", "stock": 0, "precio": "2000", "tipo": "venta", "badge": "Acción/Aventura", "img": "../images/games/Uncharted-Legacy-of-Thieves-Collection.jpg" }
 ]
