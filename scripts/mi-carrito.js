@@ -7,8 +7,7 @@ fetch('../productos.json')
     .then((productosjson) => { 
         productos = productosjson
         console.log(productos)
-        cardsAlquiler(productos)
-        agregarAlCarrito()})
+        cardsAlquiler(productos)})
 
 //----------------------------------------------------------------//
 //Declaro un array vacío para guardar los juegos seleccionadas//
