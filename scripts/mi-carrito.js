@@ -2,9 +2,13 @@
 //Declaro una variable global de productos de mi archivo JSON con Fetch//
 //----------------------------------------------------------------------//
 let productos =[];
-fetch('../scripts/productos.json')
-.then((response) => response.json())
-.then((productosJSON)=> {productos = productosJSON});
+fetch('../productos.json')
+    .then((res) => res.json())
+    .then((productosjson) => { 
+        productos = productosjson
+        console.log(productos)
+        cardsAlquiler(productos)
+        agregarAlCarrito()})
 
 //----------------------------------------------------------------//
 //Declaro un array vacío para guardar los juegos seleccionadas//
